@@ -1,0 +1,326 @@
+.Gallery
+{
+	margin-left:15%;
+	margin-right:15%;
+	border-style:inset;
+}
+.Gallery
+{
+	text-align:center;
+	overflow:hidden;
+}
+/*Each Item is held within this section each of its own*/
+.Gallery section
+{
+	margin:0;
+	padding:0%;
+	width:45%;
+	height:45%;
+	display:inline-block;
+	overflow:hidden;
+	text-decoration:none;
+	border:2px solid ##4C5E67 ;
+	background-color: #807FCD;
+	
+
+}
+/*Listing within section carrying items*/
+.Gallery section ul
+{
+	margin:0;
+	padding:1%;
+	list-style-type:none;
+	text-decoration:none;
+}
+
+.Gallery section ul li 
+{
+	padding:2%;
+	margin:0;
+	text-decoration:none;
+	
+
+}
+/*links*/
+.Gallery section ul li a
+{
+	padding:2% 33%;/*To occupy full width of section when hovered by mouse*/
+	text-decoration:none;
+	overflow:hidden;
+	
+}
+.Gallery img
+{
+	border:2px double #332921; /*Border for images*/
+	background-color:white;
+}
+.backgroundContainer{background-color:#B1F1F4;}
+
+body {
+	font-family: source-sans-pro;
+	background-color:#f2f2f2;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	font-style: normal;
+	font-weight: 200;
+}
+
+header {
+  background-image: url('..\images\background\fanbg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  text-align: center;
+  color: white;
+}
+header .intro-text {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+header .intro-text .intro-lead-in {
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 22px;
+  line-height: 22px;
+  margin-bottom: 25px;
+}
+header .intro-text .intro-heading {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom: 25px;
+}
+
+/*navigation*/
+nav {
+	float: right;
+	width: 50%;
+	text-align: right;
+	margin-right: 25px;
+	position:fixed;
+	z-index:1;
+	right:0;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav ul li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover, .dropdown:hover .dropbtn {
+    background-color: #3836EF;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+li{text-decoration:none;}
+section a{text-decoration:none;
+			color:white;}
+/*footer*/
+.foot {display:inline-block;
+		 background-color: #5F9EA0;
+		 width:100%;}
+
+.footer {
+  height:100px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #5F9EA0;
+  text-align: center;
+  overflow:visible;
+  color:white;
+  display:block;
+}
+.footer1 {
+	height:100px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #5F9EA0;
+  text-align: center;
+  overflow:visible;
+  color:white;
+  display:block;
+}	
+.social img{width:50px;
+			height:50px;}
+.social {display:inline-block;
+	text-align:center;
+	float:right;
+	right:0;
+	left:0;
+	bottom:0;
+	top:0;
+	width:100%}	
+	
+/*Downloadable Links*/
+.downloads {
+	margin:auto;
+	width:50%;
+}
+.downloads a{
+	color:white;
+}
+	
+/*mobile css*/
+
+@media (min-width: 768px) {
+  header .intro-text {
+    padding-top: 300px;
+    padding-bottom: 200px;
+  }
+  header .intro-text .intro-lead-in {
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 25px;
+  }
+  header .intro-text .intro-heading {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 75px;
+    line-height: 75px;
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width : 480px) {
+.Gallery section
+{
+	margin:0;
+	padding:0%;
+	width:100%;
+	height:45%;
+	display:block;
+	overflow:hidden;
+	border:2px solid #4C5E67 ;
+	background-color: #807FCD;
+	
+
+}
+.Gallery section ul
+{
+	margin:0;
+	padding:1%;
+}
+.Gallery
+{
+	margin-left:15%;
+	margin-right:15%;
+}
+.Gallery img{width:200px;
+			height:200px;}	
+}
+@media only screen and (max-width : 650px) and (min-width : 481px) {
+.Gallery section
+{
+	margin:0;
+	padding:0%;
+	width:100%;
+	height:45%;
+	display:block;
+	overflow:hidden;
+	border:2px solid #4C5E67 ;
+	background-color: #807FCD;
+	
+
+}
+.Gallery section ul
+{
+	margin:0;
+	padding:1%;
+}
+.Gallery
+{
+	margin-left:15%;
+	margin-right:15%;
+}
+.Gallery img{width:200px;
+			height:200px;}		
+	
+}	
+@media only screen and (max-width : 600px) and (min-width : 651px) {
+.Gallery section
+{
+	margin:0;
+	padding:0%;
+	width:100%;
+	height:45%;
+	display:block;
+	overflow:hidden;
+	border:2px solid #4C5E67 ;
+	background-color: #807FCD;
+	
+
+}
+.Gallery section ul
+{
+	margin:0;
+	padding:1%;
+}
+.Gallery
+{
+	margin-left:15%;
+	margin-right:15%;
+}
+.Gallery img{width:200px;
+			height:200px;}	
+	
+}
+
+
+@media only screen and (max-width : 400px) and (min-width : 500px) {
+.Gallery section
+{
+	margin:0;
+	padding:0%;
+	width:100%;
+	height:45%;
+	display:block;
+	overflow:hidden;
+	border:2px solid #4C5E67 ;
+	background-color: #807FCD;
+	
+
+}
+.Gallery section ul
+{
+	margin:0;
+	padding:1%;
+}
+.Gallery
+{
+	margin-left:15%;
+	margin-right:15%;
+}
+.Gallery img{width:200px;
+			height:200px;}		
+}

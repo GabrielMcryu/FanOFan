@@ -1,0 +1,189 @@
+header#Floor{background-image: url(../images/background/floorbg.jpg);
+		background-size:100%;}/*to be applied only on floor fans page*/
+header#Decorative{background-image: url(../images/background/decorativebg.jpg);}
+/*to be applied only on decorative fans page*/
+header#Bathroom{background-image: url(../images/background/bathroombg.jpg);}
+/*to be applied only on bathroom fans page*/
+header#Misting{background-image: url(../images/background/mistingbg.jpg);}
+/*to be applied only on misting fans page*/
+header#Table{background-image: url(../images/background/tablebg.jpg);}
+/*to be applied only on table fans page*/
+header#Industrial{background-image: url(../images/background/industrialbg.jpg);}
+/*to be applied only on industial & blowers fans page*/
+header#Wallmount{background-image: url(../images/background/wallmountbg.jpg);}
+/*to be applied only on wallmount fans page*/
+header#Tower{background-image: url(../images/background/towerbg.jpg);}
+/*to be applied only on tower fans page*/
+header#Window{background-image: url(../images/background/windowbg.jpg);}
+/*to be applied only on window fans page*/
+header#Ceiling{background-image: url(../images/background/ceilingbg.jpg);}
+.intro-lead-in {color:blue;}/*to be applied only on ceiling fans page*/
+header#Box{background-image: url(../images/background/boxbg.jpg);}
+/*to be applied only on box fans page*/
+header#Best{background-image: url(../images/background/bestbg.jpg);}
+/*to be applied only on box fans page*/
+header#Order{background-image: url(../images/background/orderbg.jpg);}
+/*to be applied only on download page*/
+header#downloads{background-image: url(../images/background/downloadbg.jpg);}
+/*to be applied only on gallery page*/
+header#gallerybg{background-image: url(../images/background/fanbg.jpg);}
+/*to be applied only on best fans pages 9-18 and some1-8 pages*/
+header#About{background-image: url(../images/background/aboutbg.jpg);}
+body{background-color: aquamarine;}
+h1{text-align: center;
+font-family:Cambria, Hoefler Text, Liberation Serif, Times, Times New Roman, serif ;}
+/*to be applied only on about us page*/
+header#Contact{background-image: url(../images/background/contactbg.jpg);}
+body{background-color:#B1F1F4;}
+
+
+
+
+
+/*Buttton CSS goes here*/
+.back {
+    width: 30%;
+    height-bottom: 1000px;
+    margin:auto;
+    background-color: #62C8B3;
+    border: 10px;
+    border-color: #55CF47;
+    border-style: solid;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    counter-increment: bc;
+    padding: 0px 5px 5px 5px;
+	text-align:center;
+}
+
+.back:before {
+    position: absolute;
+    padding: 10px;
+}
+
+@media screen and (max-width: 1260px) {
+    .back {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .back {
+        width: 100%;
+    }
+}
+
+.button {
+    margin: 0;
+    border: 0;
+    font-size: 18px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -100px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-user-select: none;
+    cursor: default;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+.b11_3d_jumpback {
+    perspective: 500px;
+    -webkit-perspective: 500px;
+    -moz-perspective: 500px;
+}
+
+.b11_3d_jumpback div {
+    color: #000000;
+    background-color: #ffffff;
+    border: #000000 solid 1px;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.b11_3d_jumpback:hover div {
+    color: #E8FF46;
+    background-color: #000000;
+    animation: b11_3d_jump 0.5s ease-out;
+    -webkit-animation: b11_3d_jump 0.5s ease-out;
+    -moz-animation: b11_3d_jump 0.5s ease-out;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes b11_3d_jump {
+    from {
+        transform: translateZ(0px) rotateX(0deg);
+        -webkit-transform: translateZ(0px) rotateX(0deg);
+        -moz-transform: translateZ(0px) rotateX(0deg);
+        background-color: #ffffff;
+        color: #000000;
+    }
+    49.99% {
+        transform: translateZ(100px) rotateX(90deg);
+        -webkit-transform: translateZ(100px) rotateX(90deg);
+        -moz-transform: translateZ(100px) rotateX(90deg);
+        background-color: #808080;
+        color: #E8FF46;
+    }
+    50.00% {
+        transform: translateZ(100px) rotateX(-90deg);
+        -webkit-transform: translateZ(100px) rotateX(-90deg);
+        -moz-transform: translateZ(100px) rotateX(-90deg);
+        background-color: #000000;
+        color: #808080;
+    }
+    to {
+        transform: translateZ(0px) rotateX(0deg);
+        -webkit-transform: translateZ(0px) rotateX(0deg);
+        -moz-transform: translateZ(0px) rotateX(0deg);
+        background-color: #000000;
+        color: #ffffff;
+    }
+}
+
+@-moz-keyframes b11_3d_jump {
+    from {
+        transform: translateZ(0px) rotateX(0deg);
+        -webkit-transform: translateZ(0px) rotateX(0deg);
+        -moz-transform: translateZ(0px) rotateX(0deg);
+        background-color: #ffffff;
+        color: #E8FF46;
+    }
+    49.99% {
+        transform: translateZ(100px) rotateX(90deg);
+        -webkit-transform: translateZ(100px) rotateX(90deg);
+        -moz-transform: translateZ(100px) rotateX(90deg);
+        background-color: #808080;
+        color: #000000;
+    }
+    50.00% {
+        transform: translateZ(100px) rotateX(-90deg);
+        -webkit-transform: translateZ(100px) rotateX(-90deg);
+        -moz-transform: translateZ(100px) rotateX(-90deg);
+        background-color: #000000;
+        color: #E8FF46;
+    }
+    to {
+        transform: translateZ(0px) rotateX(0deg);
+        -webkit-transform: translateZ(0px) rotateX(0deg);
+        -moz-transform: translateZ(0px) rotateX(0deg);
+        background-color: #000000;
+        color: #E8FF46;
+    }
+}

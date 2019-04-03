@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Contact Form</title> <!-- Include CSS file here -->
+		<link href="../css/contact.css" rel="stylesheet">
+		<link href="../css/exp.css" rel="stylesheet">
+		<link href="../css/commonBg.css" rel="stylesheet">
+		<link rel=  "stylesheet" type="text/css" href="../css/HomeCss.css">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+</head>
+<body>
+		<nav>
+			<ul>
+				<li><a href = "..\FanHomePage.html"> Home </a></li>
+				<li class="dropdown">
+					<a href="#" class="dropbtn">Shop</a>
+			<div class="dropdown-content">
+				  <a href="../Pages/TableFans.html">Table Fans</a>
+				  <a href="../Pages/Ceiling.html">Ceiling Fans</a>
+				  <a href="../Pages/windowfans.html">Window Fans</a>
+				  <a href="../Pages/wall Mount.html">Wall Mount Fans</a>
+				  <a href="../Pages/Floorfans.html">Floor Fans</a>
+				  <a href="../Pages/Tower.html">Tower Fans</a>
+				  <a href="../Pages/Box fans.html">Box Fans</a>
+				  <a href="../pages/mistingFans.html">Misting Fans</a>
+				  <a href="../Pages/IndustrialFans.html">Industrial Fans and blowers</a>
+				  <a href="../Pages/Decorative.html">Decorative Fans</a>
+				  <a href="../Pages/bathroom.html">Bathroom Exhaust Fans</a>
+			</div>
+			</li>
+				<li><a href = "../Pages/downloads.html"> Downloads </a></li>
+				<li><a href = "gallery.html">Gallery</a></li>
+				<li><a href = "../Pages/About.html"> About Us</a></li>
+			</ul>
+		</nav>
+	<header id="Contact">
+	<a href="..\FanHomePage.html">
+			<img class = "logo" src = "..\images\Fan o Fan Logo.png">
+			</a>
+        <div class="container2">
+            <div class="intro-text">
+                <div class="intro-lead-in">Contact Us</div>
+            </div>
+        </div>
+    </header>
+<div class="row">
+			  <a href="https://www.facebook.com/Shem-Finally-Speaks-His-Mind-295198954165581/" target="_blank">
+			  <p> <img src="..\images\facebook.jpg"width="50" height="50" alt=""/> </p>
+			  <h4>FACEBOOK</h4></a>
+			  <p>Like our page on facebook to get cool new features.</p>
+		
+			  <a href="https://twitter.com/shemie_b"target="_blank">
+			  <p> <img src="..\images\twitter.jpg"width="50" height="50" alt=""/> </p>
+				  <h4>TWITTER</h4></a>
+			  <p>check us on twitter to get updated on our websites.</p>
+			  
+			  <a href="https://instagram.com/shemie_b"target="_blank">
+			  <p> <img src="..\images\instagram.jpg"width="50" height="50" alt=""/> </p>
+				  <h4>INSTAGRAM</h4></a>
+			  <p>Follow us on Instagram for more updates on our websites and our daily activities.</p>
+		</div>
+  <h3>You can visit us in Nairobi town Kimathi avenue</h3>      
+		<div id="map_canvas"></div><!--The map is drawn here-->
+	<br/>	
+<div id="main">
+		<h2>Want to message us?Fill in the form ,we will get back to you or talk to us on our social media platform</h2>
+		<div id="form_sample"></div> <!-- JS file goes here -->
+		<script src="../js/contact.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-G9tZ-WGJXMGh4f-dD-qxDJ_Il5X6_FU&callback=initialize"></script>
+		<!--Loads the map and calls the function initialize from javascript-->
+</div>
+<!-- Footer Section -->
+<br/>
+
+	<!--googl map-->
+		<div>
+		<style>
+		
+			html { height:100%; }      
+			body { height:100%;width:100%; }      
+			#map_canvas { height:50%; width:50% }
+			
+		</style> 
+		
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-G9tZ-WGJXMGh4f-dD-qxDJ_Il5X6_FU&callback=initialize"></script>
+		
+		<script>
+			function initialize(){    // Loading Google Maps        
+				var num = new google.maps.LatLng( -1.2921,36.8219);     
+				var myOptions = {zoom: 16, center: num, mapTypeId:google.maps.MapTypeId.ROADMAP};//you can change here(ROADMAP/SETTLITE) to HYBRID                 
+				var mymap = new google.maps.Map(document.getElementById("map_canvas"), myOptions);            
+				var marker = new google.maps.Marker({position: num, map:mymap, title:"FANoFAN Nairobi"});   
+			} 
+		</script> 
+		</div>
+  
+  <div class="foot">
+  <div class="footer"><strong>Our location  </strong><br> Nairobi Kenya ,Kimathi avenue
+	<br><strong>Email</strong><br> <a href="https://gmail.com _blank">fanofan@gmail.com</a>
+  </div>
+  
+  
+  <div class="footer">Telephone Number<br> <strong> 07123456789 </strong>
+  </div>
+  
+  
+  <div class="footer1">Fan o fan <strong> &copy2017 </strong>
+  </div>
+  </div>
+</body>
+</html>
